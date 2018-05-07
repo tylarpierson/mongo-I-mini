@@ -71,3 +71,10 @@ DBAAS (database as a service)
 * MongoDB Atlas
 * mlab
 
+Client < JSON > [ API (driver) ] < BSON > [ DB Server ]
+
+## Mongoose 
+* wraps the native mongodb driver 
+* schemas and models 
+* middleware 
+* validation
