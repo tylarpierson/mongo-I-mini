@@ -78,3 +78,12 @@ Client < JSON > [ API (driver) ] < BSON > [ DB Server ]
 * schemas and models 
 * middleware 
 * validation
+
+## Workflow
+
+* connect your API to mongo
+* define a schema 
+* compile the schema into a model 
+* create a mongoose document by instatiating (calling new) on a model 
+* use the mongoose document to interact with the db document 
+
