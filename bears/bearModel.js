@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const definition = {
     species: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     latinName:{
         type: String,
