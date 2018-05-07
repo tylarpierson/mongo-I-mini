@@ -4,7 +4,7 @@
 * Secure an API.
 * Unit Testing.
 * Backend Project Week.
-* Day 1
+## Day 1
 * verify mongo installation.
 * verify mongo is running (don't stop it until you're done working with it).
 * quick intro to databases.
