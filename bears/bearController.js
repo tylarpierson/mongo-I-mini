@@ -10,7 +10,9 @@ router
 router
   .route('/:id')
   .get((req, res) => {
-    res.status(200).json({ route: '/api/bears/' + req.params.id });
+    Bear.find().then(bears => {
+      res.status(200).json(bears);
+    });
   })
   .delete((req, res) => {
     res.status(200).json({ status: 'please implement DELETE functionality' });
