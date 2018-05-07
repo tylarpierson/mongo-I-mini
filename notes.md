@@ -64,4 +64,5 @@ Why MongoDB
 
 Cons 
 * dynamic schemas
-* 
+* no joins
+
