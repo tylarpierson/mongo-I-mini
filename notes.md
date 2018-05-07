@@ -38,10 +38,10 @@ Software that provides a way to store/retrieve data.
 Client <-> [ API <-> DB Server ]
 
 ## NoSQL (Not Only SQL) 
-- A type of database 
-- key-value pair
-- graph
-- document <- MongoDB
+* A type of database 
+* key-value pair
+* graph
+* document <- MongoDB
 
 ```js
 const user = {
@@ -51,8 +51,17 @@ const user = {
 ```
 
 ## MongoDB Server 
-- databases (lambda)
-    - collections (users, roles, products)
-        - documents ({_id: 'qeworkoasjf;lkjerorir0', username: 'admin' })
-            - fields: _id, username
+* databases (lambda)
+    * collections (users, roles, products)
+        * documents ({_id: 'qeworkoasjf;lkjerorir0', username: 'admin' })
+            * fields: _id, username
 
+Why MongoDB
+* popular
+* mature
+* JS end to end 
+* dynamic schemas ( shape of the data [ properties and data types] )
+
+Cons 
+* dynamic schemas
+* 
