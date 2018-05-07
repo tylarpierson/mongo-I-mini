@@ -66,3 +66,8 @@ Cons
 * dynamic schemas
 * no joins
 
+DBAAS (database as a service)
+* offer free 500mb tiers
+* MongoDB Atlas
+* mlab
+
