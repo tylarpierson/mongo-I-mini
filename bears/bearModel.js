@@ -18,9 +18,12 @@ const definition = {
 
 const options = {
     timestamps: true,
+    strict: false,
 };
 
 const bearSchema = new mongoose.Schema(definition, options);
+
+//bearSchema.index({ species: 1, latinName: -1 });
 
 const bearModel = mongoose.model('Bear', bearSchema, 'bears');
 
