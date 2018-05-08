@@ -87,3 +87,9 @@ Client < JSON > [ API (driver) ] < BSON > [ DB Server ]
 * create a mongoose document by instatiating (calling new) on a model 
 * use the mongoose document to interact with the db document 
 
+## Day 2 
+* quick tour of MongoDB Compass
+* finish CRUD endpoints
+* a look at supported data types
+* embedded documents/schemas, AKA sub-documents
+
