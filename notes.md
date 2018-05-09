@@ -151,4 +151,17 @@ Filtering
 
     ```js
     query.sort({gender: 'female', height: 1}).select('name').then().catch()
+    const gender = req.query.gender;
+
+    let query = Characters.find();
+
+    if (gender) {
+        query.where({gender: gender});
+    }
+
+    query.then(chars => res.json(chars)).catch();
     ```
+
+    ```js
+    query.where('age').gte(18).lte(62); // gte -> greater than or equal to; lte -> less than or equal too
+    ````
