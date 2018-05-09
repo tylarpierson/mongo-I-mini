@@ -141,7 +141,7 @@ Sorting
 
 Projecting 
 
-    ```js
+    ``` js
     let query = Character.find();
     query.select('name gender')
     query.select({name: 1, gender: 1}) //({_id: 0}) don't include id 
@@ -149,7 +149,7 @@ Projecting
     ``` 
 Filtering 
 
-    ```js
+    ``` js
     query.sort({gender: 'female', height: 1}).select('name').then().catch()
     const gender = req.query.gender;
 
@@ -162,6 +162,6 @@ Filtering
     query.then(chars => res.json(chars)).catch();
     ```
 
-    ```js
+    ``` js
     query.where('age').gte(18).lte(62); // gte -> greater than or equal to; lte -> less than or equal too
     ````
