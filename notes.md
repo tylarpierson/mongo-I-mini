@@ -100,23 +100,24 @@ Client < JSON > [ API (driver) ] < BSON > [ DB Server ]
     * one to many
     * many to many
 * embedded documents/schemas, AKA sub-documents
+* linking or refs
 * data population
 * querying data
     * sorting
     * filtering
     * projection
 
-One to One
+One to One: start with embedding (sub-documents)
     * One user has one profile
     * One patient has one medical file
     * One person has one Spouse
 
-One to Many
+One to Many: start with a ref (linking)
     * most common type of relation
     * one order has many order lines (items)
     * one city has many citizens
 
-One to Few
+One to Few: could be embedded or linked (ref)
     * a book can have more than one author
     * an author can have many books
     * a blog post have a few comments 
