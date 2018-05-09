@@ -12,7 +12,22 @@ const characterSchema = new mongoose.Schema({
         type: Number,
         min: 0
     }, 
-    eye_color: String
+    eye_color: String,
+    // ships: [
+    //     {
+    //         type: ObjectId,
+    //         ref: 'Starship'
+    //     }
+    // ]
+    homeword: {
+        type: ObjectId,
+        ref: 'Planet'
+    },
+    address: {
+        city: String,
+        state: String,
+        streetAddress: String
+    }
 });
 
 const character = mongoose.model('Character', characterSchema);
