@@ -106,3 +106,23 @@ Client < JSON > [ API (driver) ] < BSON > [ DB Server ]
     * filtering
     * projection
 
+One to One
+    * One user has one profile
+    * One patient has one medical file
+    * One person has one Spouse
+
+One to Many
+    * most common type of relation
+    * one order has many order lines (items)
+    * one city has many citizens
+
+One to Few
+    * a book can have more than one author
+    * an author can have many books
+    * a blog post have a few comments 
+
+Many to Many(few)
+    * books and authors
+    * users and roles 
+    * departments and employees: one to many 
+
