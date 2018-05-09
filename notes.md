@@ -93,3 +93,16 @@ Client < JSON > [ API (driver) ] < BSON > [ DB Server ]
 * a look at supported data types
 * embedded documents/schemas, AKA sub-documents
 
+## Day 3
+* importing data
+* modeling relations
+    * one to one
+    * one to many
+    * many to many
+* embedded documents/schemas, AKA sub-documents
+* data population
+* querying data
+    * sorting
+    * filtering
+    * projection
+
