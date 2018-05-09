@@ -130,6 +130,7 @@ Many to Many(few)
 Querying Data
 
 Sorting
+
     ```js
     let query = Character.find();
     query.sort('name') // by name ascending
@@ -139,6 +140,7 @@ Sorting
     ```
 
 Projecting 
+
     ```js
     let query = Character.find();
     query.select('name gender')
@@ -146,6 +148,7 @@ Projecting
     query.select({name: 1, gender: 1, _id: 0}) // always returned by default unless specified 
     ``` 
 Filtering 
+
     ```js
     query.sort({gender: 'female', height: 1}).select('name').then().catch()
     ```
