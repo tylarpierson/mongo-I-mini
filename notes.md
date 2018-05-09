@@ -131,37 +131,37 @@ Querying Data
 
 Sorting
 
-    ```js
-    let query = Character.find();
-    query.sort('name') // by name ascending
-    query.sort('-name') // by name descending
-    query.sort('gender -height') // by ascending then descending (combine)
-    query.sort({gender: 1, height: -1}) // multiple fields 
-    ```
+```js
+let query = Character.find();
+query.sort('name') // by name ascending
+query.sort('-name') // by name descending
+query.sort('gender -height') // by ascending then descending(combine)
+query.sort({gender: 1, height: -1}) // multiple fields 
+```
 
 Projecting 
 
-    ``` js
-    let query = Character.find();
-    query.select('name gender')
-    query.select({name: 1, gender: 1}) //({_id: 0}) don't include id 
-    query.select({name: 1, gender: 1, _id: 0}) // always returned by default unless specified 
-    ``` 
+```js
+let query = Character.find();
+query.select('name gender')
+query.select({name: 1, gender: 1}) //({_id: 0}) don't include id 
+query.select({name: 1, gender: 1, _id: 0}) // always returned by default unless specified 
+``` 
 Filtering 
 
-    ``` js
-    query.sort({gender: 'female', height: 1}).select('name').then().catch()
-    const gender = req.query.gender;
+```js
+query.sort({gender: 'female', height: 1}).select('name').then(.catch()
+const gender = req.query.gender;
 
-    let query = Characters.find();
+let query = Characters.find();
 
-    if (gender) {
-        query.where({gender: gender});
-    }
+if (gender) {
+    query.where({gender: gender});
+}
 
-    query.then(chars => res.json(chars)).catch();
-    ```
+query.then(chars => res.json(chars)).catch();
+```
 
-    ``` js
-    query.where('age').gte(18).lte(62); // gte -> greater than or equal to; lte -> less than or equal too
-    ````
+``` js
+query.where('age').gte(18).lte(62); // gte -> greater than orequal to; lte -> less than or equal too
+````
