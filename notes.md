@@ -165,3 +165,10 @@ query.then(chars => res.json(chars)).catch();
 ``` js
 query.where('age').gte(18).lte(62); // gte -> greater than orequal to; lte -> less than or equal too
 ````
+
+## Day 4
+* data population
+* middleware 
+* custom validation 
+
+
